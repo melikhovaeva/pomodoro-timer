@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="./style.css">
+  <title>RedCollar</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <a href="#" class="header__link" aria-label="RedCollar School Front">
+        <img class="header__logo" src="./img/logo.svg" alt="RedCollar School">
+      </a>
+    </div>
+  </header>
+  <main>
+    <section class="pomodoro">
+      <div class="pomodoro__timer">
+        <div class="pomodoro__timer">
+          <div class="pomodoro__mode-buttons" id="mode-buttons">
+            <button
+              data-mode="pomodoro"
+              class="pomodoro__mode-button pomodoro__mode-button--active"
+              id="pomodoro"
+            >
+              Pomodoro
+            </button>
+            <button
+              data-mode="shortBreak"
+              class="pomodoro__mode-button"
+              id="short-break"
+            >
+              Short break
+            </button>
+            <button
+              data-mode="longBreak"
+              class="pomodoro__mode-button"
+              id="long-break"
+            >
+              Long break
+            </button>
+          </div>
+          <div class="pomodoro__clock" id="clock">
+            <span id="minutes">25</span>
+            <span class="separator">:</span>
+            <span id="seconds">00</span>
+          </div>
+          <button class="pomodoro__button" data-action="start" id="btn">
+            Start
+          </button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
